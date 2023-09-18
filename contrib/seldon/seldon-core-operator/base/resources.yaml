@@ -615,7 +615,7 @@ spec:
         - name: USE_EXECUTOR
           value: 'true'
         - name: EXECUTOR_CONTAINER_IMAGE_AND_VERSION
-          value: 'docker.io/seldonio/seldon-core-executor:1.15.0'
+          value: 'akskubeflow.azurecr.io/seldonio/seldon-core-executor:1.15.0'
         - name: EXECUTOR_CONTAINER_IMAGE_PULL_POLICY
           value: 'IfNotPresent'
         - name: EXECUTOR_PROMETHEUS_PATH
@@ -648,7 +648,7 @@ spec:
           value: 'false'
         - name: EXECUTOR_FULL_HEALTH_CHECKS
           value: 'false'
-        image: 'docker.io/seldonio/seldon-core-operator:1.15.0'
+        image: 'akskubeflow.azurecr.io/seldonio/seldon-core-operator:1.15.0'
         imagePullPolicy: 'IfNotPresent'
         name: manager
         ports:

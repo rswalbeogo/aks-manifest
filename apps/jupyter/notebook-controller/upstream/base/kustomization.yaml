@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../default
 images:
-- name: docker.io/kubeflownotebookswg/notebook-controller
-  newName: docker.io/kubeflownotebookswg/notebook-controller
+- name: akskubeflow.azurecr.io/kubeflownotebookswg/notebook-controller
+  newName: akskubeflow.azurecr.io/kubeflownotebookswg/notebook-controller
   newTag: v1.7.0

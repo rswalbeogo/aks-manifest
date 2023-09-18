@@ -660,7 +660,7 @@ spec:
         
       containers:
         - name: kf-feast-postgresql
-          image: docker.io/bitnami/postgresql:11.7.0-debian-10-r9
+          image: akskubeflow.azurecr.io/bitnami/postgresql:11.7.0-debian-10-r9
           imagePullPolicy: "IfNotPresent"
           resources:
             requests:
@@ -769,7 +769,7 @@ spec:
       serviceAccountName: "default"
       containers:
       - name: kf-feast-redis
-        image: "docker.io/bitnami/redis:5.0.7-debian-10-r32"
+        image: "akskubeflow.azurecr.io/bitnami/redis:5.0.7-debian-10-r32"
         imagePullPolicy: "IfNotPresent"
         securityContext:
           runAsUser: 1001
@@ -900,7 +900,7 @@ spec:
       serviceAccountName: "default"
       containers:
       - name: kf-feast-redis
-        image: docker.io/bitnami/redis:5.0.7-debian-10-r32
+        image: akskubeflow.azurecr.io/bitnami/redis:5.0.7-debian-10-r32
         imagePullPolicy: "IfNotPresent"
         securityContext:
           runAsUser: 1001

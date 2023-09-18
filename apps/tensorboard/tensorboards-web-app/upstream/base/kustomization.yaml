@@ -12,8 +12,8 @@ commonLabels:
   app: tensorboards-web-app
   kustomize.component: tensorboards-web-app
 images:
-- name: docker.io/kubeflownotebookswg/tensorboards-web-app
-  newName: docker.io/kubeflownotebookswg/tensorboards-web-app
+- name: akskubeflow.azurecr.io/kubeflownotebookswg/tensorboards-web-app
+  newName: akskubeflow.azurecr.io/kubeflownotebookswg/tensorboards-web-app
   newTag: v1.7.0
 # We need the name to be unique without the suffix because the original name is what
 # gets used with patches

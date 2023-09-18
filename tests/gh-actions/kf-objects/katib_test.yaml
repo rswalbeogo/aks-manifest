@@ -53,7 +53,7 @@ spec:
                   - '--lr=${trialParameters.learningRate}'
                   - '--num-layers=${trialParameters.numberLayers}'
                   - '--optimizer=${trialParameters.optimizer}'
-                image: docker.io/kubeflowkatib/mxnet-mnist:latest
+                image: akskubeflow.azurecr.io/kubeflowkatib/mxnet-mnist:latest
                 name: training-container
             restartPolicy: Never
     trialParameters:

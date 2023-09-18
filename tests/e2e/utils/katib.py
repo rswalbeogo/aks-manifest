@@ -7,7 +7,7 @@ from kubeflow.katib import (ApiClient, V1beta1AlgorithmSpec,
 
 from . import watch
 
-TFJOB_IMAGE = "docker.io/liuhougangxa/tf-estimator-mnist"
+TFJOB_IMAGE = "akskubeflow.azurecr.io/liuhougangxa/tf-estimator-mnist"
 KATIB_LAUNCHER_URL = "https://raw.githubusercontent.com/kubeflow/pipelines/1.8.0-rc.1/components/kubeflow/katib-launcher/component.yaml"
 
 GROUP = "kubeflow.org"
@@ -135,7 +135,7 @@ def create_katib_experiment_task(experiment_name, experiment_namespace,
                             "containers": [
                                 {
                                     "name": "tensorflow",
-                                    "image": "docker.io/liuhougangxa/tf-estimator-mnist",
+                                    "image": "akskubeflow.azurecr.io/liuhougangxa/tf-estimator-mnist",
                                     "command": [
                                         "python",
                                         "/opt/model.py",

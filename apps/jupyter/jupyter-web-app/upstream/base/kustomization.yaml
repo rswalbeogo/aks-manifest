@@ -21,8 +21,8 @@ commonLabels:
   app: jupyter-web-app
   kustomize.component: jupyter-web-app
 images:
-- name: docker.io/kubeflownotebookswg/jupyter-web-app
-  newName: docker.io/kubeflownotebookswg/jupyter-web-app
+- name: akskubeflow.azurecr.io/kubeflownotebookswg/jupyter-web-app
+  newName: akskubeflow.azurecr.io/kubeflownotebookswg/jupyter-web-app
   newTag: v1.7.0
 # We need the name to be unique without the suffix because the original name is what
 # gets used with patches

@@ -15,7 +15,7 @@ spec:
       serviceAccountName: katib-cert-generator
       containers:
         - name: cert-generator
-          image: docker.io/kubeflowkatib/cert-generator
+          image: akskubeflow.azurecr.io/kubeflowkatib/cert-generator
           command: ["./katib-cert-generator"]
           args: ["generate", "--namespace=$(KATIB_CORE_NAMESPACE)"]
           env:
