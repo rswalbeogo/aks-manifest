@@ -43,5 +43,5 @@ configurations:
 - params.yaml
 images:
 - name: gcr.io/arrikto/kubeflow/oidc-authservice
-  newName: gcr.io/arrikto/kubeflow/oidc-authservice
+  newName: akskubeflow.azurecr.io/arrikto/kubeflow/oidc-authservice
   newTag: e236439

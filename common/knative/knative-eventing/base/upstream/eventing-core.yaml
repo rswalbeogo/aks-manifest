@@ -617,7 +617,7 @@ spec:
       containers:
         - name: eventing-controller
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:33d78536e9b38dbb2ec2952207b48ff8e05acb48e7d28c2305bd0a0f7156198f
+          image: akskubeflow.azurecr.io/knative-releases/knative.dev/eventing/cmd/controller-sha256-33d78536e9b38dbb2ec2952207b48ff8e05acb48e7d28c2305bd0a0f7156198f
           resources:
             requests:
               cpu: 100m
@@ -711,7 +711,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: dispatcher
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:282b5265e1ef26309b3343038c9b4f172654e06cbee46f6ddffd23ea9ad9a3be
+          image: akskubeflow.azurecr.io/knative-releases/knative.dev/eventing/cmd/mtping-sha256-282b5265e1ef26309b3343038c9b4f172654e06cbee46f6ddffd23ea9ad9a3be
           env:
             - name: SYSTEM_NAMESPACE
               value: ''
@@ -841,7 +841,7 @@ spec:
       containers:
         - name: eventing-webhook
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:d217ab7e3452a87f8cbb3b45df65c98b18b8be39551e3e960cd49ea44bb415ba
+          image: akskubeflow.azurecr.io/knative-releases/knative.dev/eventing/cmd/webhook-sha256-d217ab7e3452a87f8cbb3b45df65c98b18b8be39551e3e960cd49ea44bb415ba
           resources:
             requests:
               cpu: 100m

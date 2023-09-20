@@ -29,7 +29,7 @@ spec:
             value: kubeflow-userid
           - name: KUBEFLOW_USERID_PREFIX
             value: ""
-        image: gcr.io/ml-pipeline/persistenceagent:dummy
+        image: akskubeflow.azurecr.io/ml-pipeline/persistenceagent:dummy
         imagePullPolicy: IfNotPresent
         name: ml-pipeline-persistenceagent
         resources:

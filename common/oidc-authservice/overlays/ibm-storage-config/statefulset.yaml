@@ -7,7 +7,7 @@ spec:
     spec:
       initContainers:
       - name: fix-permission
-        image: busybox
+        image: akskubeflow.azurecr.io/busybox
         command: ['sh', '-c']
         args: ['chmod -R 777 /var/lib/authservice;']
         volumeMounts:

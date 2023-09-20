@@ -8,5 +8,5 @@ resources:
   - metadata-envoy-service.yaml
   - metadata-grpc-sa.yaml
 images:
-  - name: gcr.io/ml-pipeline/metadata-envoy
+  - name: akskubeflow.azurecr.io/ml-pipeline/metadata-envoy
     newTag: 1.8.4

@@ -393,7 +393,7 @@ spec:
             - mountPath: /registration
               name: registration-dir
         - name: kfp-csi-s3
-          image: "quay.io/datashim-io/csi-s3:latest"
+          image: "akskubeflow.azurecr.io/datashim-io/csi-s3:latest"
           imagePullPolicy: Always
           args:
             - "--v=5"

@@ -10736,7 +10736,7 @@ spec:
             capabilities:
               drop:
               - ALL
-          image: "quay.io/bentoml/yatai-deployment:1.1.4"
+          image: "akskubeflow.azurecr.io/bentoml/yatai-deployment:1.1.4"
           imagePullPolicy: IfNotPresent
 
           ports:

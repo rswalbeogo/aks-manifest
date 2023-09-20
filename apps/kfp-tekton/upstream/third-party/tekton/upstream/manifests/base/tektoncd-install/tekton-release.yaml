@@ -1812,7 +1812,7 @@ spec:
       serviceAccountName: tekton-pipelines-controller
       containers:
         - name: tekton-pipelines-controller
-          image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.41.0@sha256:556953d6367b28504b7ad32f58a50b3e3609f60aaddfca3aad217e93465551e7
+          akskubeflow.azurecr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.41.0-sha256-556953d6367b28504b7ad32f58a50b3e3609f60aaddfca3aad217e93465551e7
           args: [
             # These images are built on-demand by `ko resolve` and are replaced
             # by image references by digest.
@@ -2566,7 +2566,7 @@ spec:
       serviceAccountName: tekton-pipelines-resolvers
       containers:
         - name: controller
-          image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers:v0.41.0@sha256:de08fa01e521144d9852dd14fe64f75da0b471c7379b0f721043f69fc86a8647
+          akskubeflow.azurecr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers:v0.41.0-sha256-de08fa01e521144d9852dd14fe64f75da0b471c7379b0f721043f69fc86a8647
           resources:
             requests:
               cpu: 100m
@@ -2732,7 +2732,8 @@ spec:
         - name: webhook
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.41.0@sha256:f4e766d21b0ea2735f487888c0155c9d8287f04ac77a4948a616250d24175475
+          akskubeflow.azurecr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.41.0-sha256-f4e766d21b0ea2735f487888c0155c9d8287f04ac77a4948a616250d24175475
+
           # Resource request required for autoscaler to take any action for a metric
           resources:
             requests:

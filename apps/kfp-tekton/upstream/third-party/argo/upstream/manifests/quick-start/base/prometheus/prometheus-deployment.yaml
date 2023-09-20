@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: prometheus
-          image: prom/prometheus
+          image: akskubeflow.azurecr.io/prometheus
           args:
             - --config.file=/config/prometheus.yaml
           volumeMounts:

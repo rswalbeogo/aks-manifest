@@ -4,7 +4,7 @@ metadata:
   name: test-yatai
   namespace: kubeflow
 spec:
-  image: quay.io/bentoml/iris_classifier:r4zint4b567i4usu
+  image: akskubeflow.azurecr.io/bentoml/iris_classifier:r4zint4b567i4usu
   runners:
   - name: iris_clf
     runnableType: SklearnRunnable

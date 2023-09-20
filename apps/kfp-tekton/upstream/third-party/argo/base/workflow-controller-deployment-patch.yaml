@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: workflow-controller
-          image: gcr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
+          image: akskubeflow.azurecr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
           args:
             - --configmap
             - workflow-controller-configmap

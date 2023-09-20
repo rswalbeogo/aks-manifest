@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: main
-          image: minio/minio
+          image: akskubeflow.azurecr.io/minio
           env:
             - name: MINIO_ACCESS_KEY
               value: admin

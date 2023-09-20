@@ -655,7 +655,7 @@ spec:
         fsGroup: 1001
       initContainers:
         # - name: do-something
-        #   image: busybox
+        #   image: akskubeflow.azurecr.io/busybox
         #   command: ['do', 'something']
         
       containers:
